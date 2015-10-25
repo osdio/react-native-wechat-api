@@ -4,7 +4,8 @@
   "description": "A react-native wrapper for wechat api.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "reset": "cd example/demo &&  npm uninstall react-native-wechat-api &&  npm i && cd ../.."
   },
   "keywords": [
     "react-native"

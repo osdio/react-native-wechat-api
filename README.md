@@ -14,6 +14,47 @@ npm i react-native-wechat-api --save
  ![D90D3626-3385-45E9-AAB7-ADF43257EE4B.png](http://dn-cnode.qbox.me/FsRG0pqZ_6h5b_QVx8EZ3ToEf6jv)
  
 
+# 项目引用
+
+### 引用需要的文件头
+
+在AppDelegate中加入以下代码:
+
+```
+
+#import "WXApi.h"
+#import "WXApiManager.h"
+
+```
+
+
+### 要使你的程序启动后微信终端能响应你的程序，必须在代码中向微信终端注册你的id。
+
+在AppDelegate 的 didFinishLaunchingWithOptions 函数中向微信注册id:
+
+```
+
+[WXApi registerApp:@"your id" withDescription:@"demo 2.0"];
+
+```
+
+### 重写AppDelegate的handleOpenURL和openURL方法：
+
+```
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+  return  [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  return [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+}
+
+```
+
+
+
+
 # API
 
 ### sendAuthReq(scope,state,openID)

@@ -11,7 +11,7 @@ npm i react-native-wechat-api --save
 
 将`ios/RNWechatAPI.xcodeproj`添加到项目中, link如下库:
 
- ![D90D3626-3385-45E9-AAB7-ADF43257EE4B.png](//dn-cnode.qbox.me/FsRG0pqZ_6h5b_QVx8EZ3ToEf6jv)
+ ![D90D3626-3385-45E9-AAB7-ADF43257EE4B.png](http://dn-cnode.qbox.me/FsRG0pqZ_6h5b_QVx8EZ3ToEf6jv)
  
 
 # API

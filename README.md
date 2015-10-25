@@ -39,4 +39,9 @@ npm i react-native-wechat-api --save
     
 ```
 
+# FAQ
+
+* 目前只实现了登陆认证API, 其实其他API实现其实也很简单, 稍微改动一下代码就行, 但是目前感觉略坑的是, 分享API每次得需要一个image, 而js
+调用oc目前我还没有找到一个好的模式去用这个分享API, 难道每次传一个url path? 当然如果你有更好的想法, 欢迎提交PR.
+
 

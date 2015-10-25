@@ -4,8 +4,8 @@ gulp = require "gulp"
 src = 'index.js'
 dist = './example/demo/node_modules/react-native-wechat-api'
 
-ocSrc = './ios/**'
-ocDist = './example/demo/node_modules/react-native-wechat-api/ios'
+ocSrc = './ios/RNWechatAPI/**'
+ocDist = './example/demo/node_modules/react-native-wechat-api/ios/RNWechatAPI'
 
 gulp.task 'move', ()->
   gulp.src src

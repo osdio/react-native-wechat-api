@@ -207,9 +207,6 @@
     req.state = state;
     req.openID = openID;
     
-//    return [WXApi sendAuthReq:req
-//               viewController:viewController
-//                     delegate:[WXApiManager sharedManager]];
     return [WXApi sendReq:req];
 }
 

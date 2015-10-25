@@ -16,4 +16,4 @@ gulp.task 'move', ()->
 
 
 gulp.task 'default', ['move'], ()->
-  gulp.watch src, ['move']
+  gulp.watch [src,ocSrc], ['move']

@@ -8,8 +8,10 @@
 
 #import "RCTBridgeModule.h"
 #import "WXApiRequestHandler.h"
+#import "WXApiManager.h"
 
-@interface RNWechatAPI:NSObject<RCTBridgeModule>
+
+@interface RNWechatAPI:NSObject<RCTBridgeModule, WXApiManagerDelegate>
 
 
 @end

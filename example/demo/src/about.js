@@ -1,7 +1,9 @@
 var React = require('react-native');
 var WXApi = require('react-native-wechat-api');
 
-
+var {
+    NativeAppEventEmitter
+    } = React;
 
 var {
     Component,
@@ -13,6 +15,17 @@ var {
 class About extends Component {
     constructor(props) {
         super(props);
+        this.eventEmitter = NativeAppEventEmitter.addListener('didRecvAuthResponse', this._onAuthRes.bind(this));
+    }
+
+
+    componentWillUnmount() {
+        this.eventEmitter.remove();
+    }
+
+
+    _onAuthRes(e) {
+        console.log(e);
     }
 
 
@@ -20,7 +33,10 @@ class About extends Component {
         return (
             <View>
                 <Text onPress={()=>{
-                   WXApi.sendAuthMeg('1','234','234');
+                   WXApi.sendAuthReq(
+                   'snsapi_message,snsapi_userinfo,snsapi_friend,snsapi_contact',
+                   '234',
+                   '234');
                 }}>
                     asdfasdfasdasdfasdfasdfasdfasdfasdf
                     asdfasdfas

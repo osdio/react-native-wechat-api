@@ -39,9 +39,7 @@ class demo extends Component {
                         ></RouteComponent>
                     )
                 }}
-                >
-
-            </Navigator>
+                />
         )
     }
 }

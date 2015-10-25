@@ -7,7 +7,8 @@ var {
     Component,
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
     } = React;
 
 
@@ -20,21 +21,20 @@ class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome} onPress={()=>{
+                <Text style={styles.welcome}>
+                    Welcome to React Native!
+                </Text>
+
+                <TouchableOpacity onPress={()=>{
                     this.props.navigator.push({
                         name:'adsf',
                         component:About
                     })
                 }}>
-                    Welcome to React Native!
-                </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit index.ios.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload,{'\n'}
-                    Cmd+D or shake for dev menu
-                </Text>
+                    <Text style={styles.instructions}>
+                        跳转到about页面
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }
@@ -56,6 +56,7 @@ var styles = StyleSheet.create({
         textAlign: 'center',
         color: '#333333',
         marginBottom: 5,
+        fontSize: 24
     },
 });
 

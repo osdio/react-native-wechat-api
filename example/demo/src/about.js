@@ -8,7 +8,10 @@ var {
 var {
     Component,
     View,
-    Text
+    Text,
+    StyleSheet,
+    TouchableOpacity,
+    AlertIOS
     } = React;
 
 
@@ -26,35 +29,44 @@ class About extends Component {
 
     _onAuthRes(e) {
         console.log(e);
+        AlertIOS.alert(JSON.stringify(e));
+    }
+
+
+    _onLoginPress() {
+        WXApi.sendAuthReq(
+            'snsapi_message,snsapi_userinfo,snsapi_friend,snsapi_contact',
+            '234',
+            '234');
     }
 
 
     render() {
         return (
-            <View>
-                <Text onPress={()=>{
-                   WXApi.sendAuthReq(
-                   'snsapi_message,snsapi_userinfo,snsapi_friend,snsapi_contact',
-                   '234',
-                   '234');
-                }}>
-                    asdfasdfasdasdfasdfasdfasdfasdfasdf
-                    asdfasdfas
-                    d
-                    asdf
-                    a
-                    sdf
-                    asd
-                    f
-                    asdf
-                    a
-                    sdf
-
-                </Text>
+            <View style={styles.container}>
+                <TouchableOpacity onPress={this._onLoginPress.bind(this)}>
+                    <Text style={styles.login}>
+                        微信登陆
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }
 }
+
+
+var styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    login: {
+        flex: 1,
+        fontSize: 30
+    }
+});
 
 
 module.exports = About;

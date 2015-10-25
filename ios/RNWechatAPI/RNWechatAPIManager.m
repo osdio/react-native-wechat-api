@@ -18,10 +18,22 @@
 
 RCT_EXPORT_MODULE();
 
+
+
 RCT_EXPORT_METHOD(sendAuthMeg:(NSString *)authScope authState:(NSString *) authState authOpenID:(NSString *)authOpenID)
 {
     [WXApiRequestHandler sendAuthRequestScope:authScope State:authState OpenID:authState];
 }
+
+
+RCT_EXPORT_METHOD(sendTextMes:(NSString *)text scene:(int) scene)
+{
+    [WXApiRequestHandler sendText:text InScene:scene];
+}
+
+
+
+
 
 - (instancetype)init
 {

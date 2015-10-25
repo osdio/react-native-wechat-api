@@ -25,11 +25,11 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9E2A102B1BDB9B400038920E /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E2A10271BDB9B400038920E /* read_me.txt */; };
 		9E2A103F1BDBA15B0038920E /* libRNWechatAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10231BDB9A930038920E /* libRNWechatAPI.a */; };
-		9E2A10491BDBA2A40038920E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10481BDBA2A40038920E /* SystemConfiguration.framework */; };
-		9E2A104B1BDBA2AF0038920E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A104A1BDBA2AF0038920E /* libz.tbd */; };
-		9E2A104D1BDBA2BA0038920E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A104C1BDBA2BA0038920E /* libsqlite3.0.tbd */; };
-		9E2A104F1BDBA2C30038920E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A104E1BDBA2C30038920E /* libc++.tbd */; };
-		9E2A10511BDBA2EB0038920E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10501BDBA2EB0038920E /* CoreTelephony.framework */; };
+		9E2A105E1BDD26B80038920E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A105D1BDD26B80038920E /* libz.tbd */; };
+		9E2A10601BDD26C20038920E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A105F1BDD26C20038920E /* libsqlite3.0.tbd */; };
+		9E2A10621BDD26C90038920E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10611BDD26C90038920E /* libc++.tbd */; };
+		9E2A10641BDD27340038920E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10631BDD27340038920E /* SystemConfiguration.framework */; };
+		9E2A10661BDD273E0038920E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2A10651BDD273E0038920E /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,11 +146,11 @@
 		9E2A10271BDB9B400038920E /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		9E2A10281BDB9B400038920E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		9E2A10291BDB9B400038920E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		9E2A10481BDBA2A40038920E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9E2A104A1BDBA2AF0038920E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		9E2A104C1BDBA2BA0038920E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		9E2A104E1BDBA2C30038920E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		9E2A10501BDBA2EB0038920E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9E2A105D1BDD26B80038920E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9E2A105F1BDD26C20038920E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		9E2A10611BDD26C90038920E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9E2A10631BDD27340038920E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9E2A10651BDD273E0038920E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +165,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2A10511BDBA2EB0038920E /* CoreTelephony.framework in Frameworks */,
-				9E2A104F1BDBA2C30038920E /* libc++.tbd in Frameworks */,
-				9E2A104D1BDBA2BA0038920E /* libsqlite3.0.tbd in Frameworks */,
-				9E2A104B1BDBA2AF0038920E /* libz.tbd in Frameworks */,
-				9E2A10491BDBA2A40038920E /* SystemConfiguration.framework in Frameworks */,
+				9E2A10661BDD273E0038920E /* CoreTelephony.framework in Frameworks */,
+				9E2A10641BDD27340038920E /* SystemConfiguration.framework in Frameworks */,
+				9E2A10621BDD26C90038920E /* libc++.tbd in Frameworks */,
+				9E2A10601BDD26C20038920E /* libsqlite3.0.tbd in Frameworks */,
+				9E2A105E1BDD26B80038920E /* libz.tbd in Frameworks */,
 				9E2A103F1BDBA15B0038920E /* libRNWechatAPI.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -320,11 +320,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				9E2A10501BDBA2EB0038920E /* CoreTelephony.framework */,
-				9E2A104E1BDBA2C30038920E /* libc++.tbd */,
-				9E2A104C1BDBA2BA0038920E /* libsqlite3.0.tbd */,
-				9E2A104A1BDBA2AF0038920E /* libz.tbd */,
-				9E2A10481BDBA2A40038920E /* SystemConfiguration.framework */,
+				9E2A10671BDD275E0038920E /* Frameworks */,
 				13B07FAE1A68108700A75B9A /* demo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* demoTests */,
@@ -361,6 +357,18 @@
 			);
 			name = SDKExport;
 			path = "../node_modules/react-native-wechat-api/ios/SDKExport";
+			sourceTree = "<group>";
+		};
+		9E2A10671BDD275E0038920E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A10651BDD273E0038920E /* CoreTelephony.framework */,
+				9E2A10631BDD27340038920E /* SystemConfiguration.framework */,
+				9E2A10611BDD26C90038920E /* libc++.tbd */,
+				9E2A105F1BDD26C20038920E /* libsqlite3.0.tbd */,
+				9E2A105D1BDD26B80038920E /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

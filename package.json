@@ -1,6 +1,6 @@
 {
   "name": "react-native-wechat-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react-native wrapper for wechat api.",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-function type(o) {
+export function type(o) {
     var s = Object.prototype.toString.call(o);
     return s.match(/\[object (.*?)\]/)[1].toLowerCase();
 }
@@ -19,10 +19,10 @@ function getTypeFunction() {
         'NaN',
         'Infinite'
     ].forEach((t)=> {
-            o[`is${t}`] = (object)=> type(object) === t.toLowerCase();
-        });
+        o[`is${t}`] = (object)=> type(object) === t.toLowerCase();
+    });
     return o;
 }
 
 
-export default Type = getTypeFunction();
+export const Type = getTypeFunction();

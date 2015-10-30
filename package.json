@@ -1,6 +1,6 @@
 {
   "name": "react-native-wechat-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react-native wrapper for wechat api.",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,13 @@
     "reset": "cd example/demo &&  npm uninstall react-native-wechat-api &&  npm i && cd ../.."
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-component",
+    "ios"
   ],
+  "peerDependencies": {
+    "react-native": ">=0.13"
+  },
   "author": "soliury",
   "license": "ISC",
   "devDependencies": {
